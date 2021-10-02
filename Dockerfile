@@ -17,6 +17,7 @@ RUN apt-get update  \
     python3-urllib3 \
     python3-wheel \
     python3-requests \
+    gunicorn \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
