@@ -7,4 +7,8 @@ RUN apt-get update  \
     python3-dateutil python3-urllib3 python3-wheel python3-requests \
     gunicorn python3-poetry\
  && apt-get clean \
- && rm -rf /var/lib/apt/lists/*
+ && rm -rf /var/lib/apt/lists/* 
+
+
+ RUN pip install --upgrade pip
+ RUN pip install --upgrade poetry
